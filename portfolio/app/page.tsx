@@ -1,13 +1,33 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Awards from "@/components/Awards";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
-      <div>
-        <h1 className="bg-amber-200">
-          Hello
-        </h1>
-      </div>
+    <main className="overflow-x-hidden">
+      <Navbar />
+
+      <Hero />
+
+      <About />
+
+      <Skills />
+
+      <Projects />
+
+      <Experience />
+
+      <Awards />
+
+      <Contact />
+
+      <Footer />
     </main>
   );
 }
